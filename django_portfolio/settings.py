@@ -10,8 +10,6 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
 #! SECURITY WARNING: don't run with debug turned on in production¡
 DEBUG = 'RENDER' not in os.environ
 
-ALLOWED_HOSTS = []
-
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
@@ -114,3 +112,5 @@ MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = '/public/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+ALLOWED_HOSTS = [ 'localhost', 'https://web-production-daa5.up.railway.app/' ]
