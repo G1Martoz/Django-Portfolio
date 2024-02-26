@@ -113,6 +113,8 @@ MEDIA_URL = '/public/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-ALLOWED_HOSTS = [ 'localhost', 'web-production-daa5.up.railway.app' ]
+# settings.py
+
+ALLOWED_HOSTS = ['web-production-9d19d.up.railway.app', 'localhost']
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'portfolio/satatic')]
