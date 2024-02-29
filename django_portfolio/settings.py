@@ -119,7 +119,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'portfolio/static')]
 
 
 
-ALLOWED_HOSTS = ['django-portfolio-production-5103.up.railway.app', 'localhost']
+ALLOWED_HOSTS = ['*','django-portfolio-production-5103.up.railway.app', 'localhost']
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
