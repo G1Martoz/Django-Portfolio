@@ -4,3 +4,5 @@ venv
 db.sqlite3
 .env
 staticfiles
+Django-portfolio.code-workspace
+.vscode
