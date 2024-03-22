@@ -1,6 +1,6 @@
 from pathlib import Path
-import dj_database_url
 from dotenv import load_dotenv
+import dj_database_url
 import os
 
 load_dotenv()
@@ -20,8 +20,6 @@ DEBUG = True
 # Application definition
 
 INSTALLED_APPS = [
-    'blog',
-    'portfolio',
     'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -29,6 +27,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+
+    'blog',
+    'portfolio',
+    # 'accounts',
 ]
 
 MIDDLEWARE = [
@@ -68,12 +71,14 @@ DATABASES = {
     'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
 }
 
+
 # DATABASES = {
-#     # Replace this value with your local database's connection string.
-#     'default': dj_database_url.config(
-#         default='postgresql://postgres:postgres@localhost:5432/mysite',
-#         conn_max_age=600)
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
 # }
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {
