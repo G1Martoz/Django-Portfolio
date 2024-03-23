@@ -47,11 +47,19 @@
 
         {% if project.url %}
         <a
-          href="{{ project.url }}"
+          href="https://github.com/G1Martoz/ScrapFlask.git"
           class="btn btn-light rounded-0 btn-sm"
           target="_blank"
-          >{{ project.url }}</a
+          style="
+            max-width: 150px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          "
         >
+          <span>https://github.com/G1Martoz/ScrapFlask.git</span>
+        </a>
+
         {% endif %}
       </div>
     </div>
